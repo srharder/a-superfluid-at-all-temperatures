@@ -2,6 +2,7 @@
 
 A classical Monte Carlo illustration of the mechanism in [arXiv:2610.10169](https://arxiv.org/abs/2610.10169): a small
 sector orders when heated, because a large reservoir of other fields fluctuates more, and so gains entropy, once the small sector condenses.
+The blog post [Resisting Misalignment](https://bhaumik-institute.physics.ucla.edu/sites/default/files/news/resisting-misalignment/index.html) explains the idea with everyday examples.
 
 **Model.** A classical field theory (the static modes of a thermal field theory) on a periodic $L^3$ cubic lattice with
 weight $e^{-H/T}$, a superfluid order parameter $\phi_x\in\mathbb{R}^2$ and a reservoir $\chi_x\in\mathbb{R}^N$, $N=32$:

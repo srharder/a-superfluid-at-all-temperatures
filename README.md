@@ -1,12 +1,12 @@
 # A Superfluid at All Temperatures
 
-Code for the paper
+**Blog post:** [Resisting Misalignment](https://bhaumik-institute.physics.ucla.edu/sites/default/files/news/resisting-misalignment/index.html), a non-technical introduction: a superfluid at every temperature, and
+a chiral symmetry that stays broken however hot it gets.
 
-> S. Harder and A. Sharon, *A Superfluid at All Temperatures*, [arXiv:2610.10169](https://arxiv.org/abs/2610.10169) [hep-th].
+**Paper:** S. Harder and A. Sharon, *A Superfluid at All Temperatures*, [arXiv:2610.10169](https://arxiv.org/abs/2610.10169) [hep-th].
 
-The paper constructs unitary, local, 3+1-dimensional conformal field theories with finitely many fields whose thermal
-state breaks a continuous global symmetry at every temperature. A non-technical introduction is the blog post
-[Resisting Misalignment](https://bhaumik-institute.physics.ucla.edu/sites/default/files/news/resisting-misalignment/index.html).
+This repository contains the code for the paper. The paper constructs unitary, local, 3+1-dimensional conformal field
+theories with finitely many fields whose thermal state breaks a continuous global symmetry at every temperature.
 
 ## Contents
 
