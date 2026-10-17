@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+superfluid/pyrate_work/
+superfluid/validation_results_*.json
+.DS_Store
+entropic_order/*_quick.*

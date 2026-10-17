@@ -1,0 +1,35 @@
+# YAML 1.1
+---
+Author: crosscheck
+Date: 30.09.2026
+Name: CDB43
+Groups: {A1: SU4, B1: SU4, A2: SU3, B2: SU3}
+
+Fermions: {
+    p1L : {Gen: 1, Qnb: {A1: 4}},
+    p1R : {Gen: 1, Qnb: {A1: 4}},
+    c1L : {Gen: 1, Qnb: {B1: 4}},
+    c1R : {Gen: 1, Qnb: {B1: 4}},
+    p2L : {Gen: 1, Qnb: {A2: 3}},
+    p2R : {Gen: 1, Qnb: {A2: 3}},
+    c2L : {Gen: 1, Qnb: {B2: 3}},
+    c2R : {Gen: 1, Qnb: {B2: 3}},
+}
+
+RealScalars: {
+}
+
+ComplexScalars: {
+    P1 : {RealFields: [P1r, P1i], Norm: 1/sqrt(2), Qnb: {A1: 4, B1: -4}},
+    P2 : {RealFields: [P2r, P2i], Norm: 1/sqrt(2), Qnb: {A2: 3, B2: -3}},
+}
+
+Potential: {
+    QuarticTerms: {
+        h1 : P1bar[a,b] P1[a,d] P1bar[c,d] P1[c,b],
+        f1 : (P1bar[a,b] P1[a,b])**2,
+        h2 : P2bar[a,b] P2[a,d] P2bar[c,d] P2[c,b],
+        f2 : (P2bar[a,b] P2[a,b])**2,
+        z : P1bar[a,b] P1[a,b] P2bar[c,d] P2[c,d]
+    }
+}

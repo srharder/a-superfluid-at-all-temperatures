@@ -1,0 +1,35 @@
+# YAML 1.1
+---
+Author: crosscheck
+Date: 30.09.2026
+Name: CDB52
+Groups: {A1: SU5, B1: SU5, A2: SU2, B2: SU2}
+
+Fermions: {
+    p1L : {Gen: 1, Qnb: {A1: 5}},
+    p1R : {Gen: 1, Qnb: {A1: 5}},
+    c1L : {Gen: 1, Qnb: {B1: 5}},
+    c1R : {Gen: 1, Qnb: {B1: 5}},
+    p2L : {Gen: 1, Qnb: {A2: 2}},
+    p2R : {Gen: 1, Qnb: {A2: 2}},
+    c2L : {Gen: 1, Qnb: {B2: 2}},
+    c2R : {Gen: 1, Qnb: {B2: 2}},
+}
+
+RealScalars: {
+}
+
+ComplexScalars: {
+    P1 : {RealFields: [P1r, P1i], Norm: 1/sqrt(2), Qnb: {A1: 5, B1: -5}},
+    P2 : {RealFields: [P2r, P2i], Norm: 1/sqrt(2), Qnb: {A2: 2, B2: -2}},
+}
+
+Potential: {
+    QuarticTerms: {
+        h1 : P1bar[a,b] P1[a,d] P1bar[c,d] P1[c,b],
+        f1 : (P1bar[a,b] P1[a,b])**2,
+        h2 : P2bar[a,b] P2[a,d] P2bar[c,d] P2[c,b],
+        f2 : (P2bar[a,b] P2[a,b])**2,
+        z : P1bar[a,b] P1[a,b] P2bar[c,d] P2[c,d]
+    }
+}

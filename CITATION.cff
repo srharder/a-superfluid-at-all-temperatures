@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "A Superfluid at All Temperatures: code"
+authors:
+  - family-names: Harder
+    given-names: Sven
+  - family-names: Sharon
+    given-names: Adar
+license: MIT
+preferred-citation:
+  type: article
+  title: "A Superfluid at All Temperatures"
+  authors:
+    - family-names: Harder
+      given-names: Sven
+    - family-names: Sharon
+      given-names: Adar
+  year: 2026
+  identifiers:
+    - type: other
+      value: "arXiv:2610.10169"
+  url: "https://arxiv.org/abs/2610.10169"
