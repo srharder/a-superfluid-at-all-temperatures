@@ -260,8 +260,7 @@ def jacobian_eigs(s, N1, Nf1, N2, Nf2):
 #     then Laurent-fitted in (N1,N2) (smallest exact rational basis).  Blind holdouts: (4,3) all 94
 #     coefficients to 4.6e-12, (5,2) all 101 coefficients to 6.8e-10.  Planar limit == CCR eq. 3.4 mapped
 #     by CCR eq. 4.16, incl. all zeta-dependent terms (exact).  Strings in class1_beta2L.json.
-#     The scripts that produced these fits are not part of this repository. pyrate_crosscheck.py
-#     checks the fitted expressions against PyR@TE 3 at two loops.
+#     pyrate_crosscheck.py checks the fitted expressions against PyR@TE 3 at two loops.
 # ------------------------------------------------------------------------------------------------
 x1s, x2s = sp.symbols('x1 x2')
 

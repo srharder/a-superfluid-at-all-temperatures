@@ -21,8 +21,7 @@ Python 3 with numpy, scipy, sympy, mpmath and pandas; `rgengine.py` also uses ja
   - the planar circle, the Jacobian, the left null vector l(theta) and the angular beta function, in sympy;
   - an exact rational finite-N fixed-point solver, and the thermal analysis.
 - `class1_beta2L.json` holds the finite-N two-loop quartic beta functions of Eq. (A3) as sympy strings. They were obtained
-  by an exact fit to the output of `rgengine.py`. The fitting scripts are not included; `pyrate_crosscheck.py` checks the
-  expressions against PyR@TE 3.
+  by an exact fit to the output of `rgengine.py`, and `pyrate_crosscheck.py` checks them against PyR@TE 3.
 - `rgengine.py` is a general perturbative renormalization-group engine for four-dimensional gauge-Yukawa-scalar theories
   at finite N. It builds explicit group generators and evaluates the general one- and two-loop formulas (Machacek-Vaughn,
   Luo-Wang-Xiao) as tensor contractions, with no large-N input. It also fits exact polynomials in 1/N, finds fixed

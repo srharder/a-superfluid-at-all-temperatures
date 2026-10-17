@@ -55,20 +55,6 @@ lighter once it condenses and fluctuate more (panel b). An ordinary superfluid, 
 (panel a, grey). Unlike the conformal theories of the paper, the lattice model has a scale, so it shows the mechanism but
 not order at all temperatures. Details are in [`entropic_order/README.md`](entropic_order/README.md).
 
-## Changes relative to the code used for the paper
-
-None of these changes affects the results of the paper.
-
-- `pyrate_crosscheck.py`: the conversion of PyR@TE's coefficients to 't Hooft couplings multiplied by $16\pi^2$ at one loop
-  where it should divide, and missed a factor $1/(16\pi^2)^2$ at two loops. The earlier version therefore found all
-  ratios equal to $(16\pi^2)^2$ instead of 1. With the correction every ratio equals 1 to within $10^{-12}$
-  ([`pyrate_crosscheck.md`](superfluid/pyrate_crosscheck.md)). PyR@TE is now pinned to a fixed commit.
-- `table1.py` is new. It also computes the two example theories and the column $D/D_{\rm LO}$.
-- `family_fixed_points.py`: the solver now accepts any theory $(N_1,N_{f,1},N_2,N_{f,2})$, checks the residuals of the
-  fixed-point equations and writes them to the CSV file, and no longer creates an unused folder.
-- The scripts that fitted the two-loop beta functions in `class1_beta2L.json` are not included. The fitted expressions
-  are checked against PyR@TE 3 at two loops.
-
 ## Acknowledgments
 
 As stated in the paper, this work made substantial use of the AI system Claude (Opus 5.5, Anthropic), accessed through
